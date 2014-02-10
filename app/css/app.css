@@ -10,6 +10,10 @@ h1 {
   font-size: 64px;
 }
 
+.back {
+  font-size: 32px;
+}
+
 .jumbo {
   text-align: center;
   padding: 20px;
@@ -29,11 +33,42 @@ h1 {
 
 /* cats */
 
+.cat-container {
+  margin: auto;
+  width: 50%;
+}
+
+.cats {
+  list-style: none;
+  display: block;
+}
+
+.cat-pic {
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+.thumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thumbs li {
+  display: inline;
+  float: right;
+}
+
+.cat-thumb {
+  width: 100px;
+  margin: 10px;
+}
+
 .cat {
   margin: 20px 0;
 }
 
-.cat a {
+a {
   color: lightblue;
   font-weight: 800;
 }
@@ -77,4 +112,3 @@ h1 {
   -webkit-animation: vortex 40s ease-in-out 0s infinite;
   animation: vortex 40s ease-in-out 0s infinite ;
 }
-

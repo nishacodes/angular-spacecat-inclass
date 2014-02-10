@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="billions"></div>
+  <img id="sagan" src="img/sagan.png"/>
+  <div class="jumbo">  
+    <h1>Intergalactic Space Cat Registry</h1>
+    <input id="search" type="text" ng-model="query" />
+    <select ng-model="orderProp">
+      <option value="name">Alphabetical</option>
+      <option value="-planets">Planets Visited</option>
+    </select>
+  </div>
+  <div class="cat-container container">
+    <ul>
+      <!-- cats go here -->
+      <li ng-repeat="cat in cats | filter:query | orderBy:orderProp" class="cat">
+        <a href="#/cats/{{cat.id}}">
+          <img ng-src="img/spacecats/{{cat.name}}-thumb.jpg"/>
+        </a>
+        <div class="info">
+          <a href="#/cats/{{cat.id}}">
+            <h3>{{cat.name}}</h3>
+          </a>
+          <p>{{cat.bio}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
